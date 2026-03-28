@@ -7,6 +7,10 @@
 </head>
 <body>
     <?php
+    // Comentario
+    # Comentario
+    /* Comentario grande
+     */
         echo 'Ola mundo com echo<br>';
         print 'Ola mundo com print<br>';
     ?>
