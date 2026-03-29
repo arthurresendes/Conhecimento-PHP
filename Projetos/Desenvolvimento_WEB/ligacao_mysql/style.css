@@ -1,0 +1,30 @@
+body{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input{
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid rgb(184, 184, 184);
+}
+
+#incluir{
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  cursor:pointer;
+}
+
+#incluir:hover{
+  cursor:pointer;
+  width: 220px;
+  height: 35px;
+  background-color: white;
+  color: green;
+  transition-duration: .5s;
+  box-shadow: 1px 1px rgb(189, 189, 189);
+}
