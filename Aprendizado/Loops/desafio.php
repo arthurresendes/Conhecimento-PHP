@@ -1,7 +1,7 @@
 <?php
     $lista_aleatorios =[];
 
-    for($i = 1; $i < 7; $i++){
+    for($i = 0; $i < 6; $i++){
         $lista_aleatorios[] = rand(0,60);
     }
 
