@@ -5,7 +5,7 @@
 
     if($nome == "Arthur" && $senha == "1234"){
         $_SESSION['logado'] = true;
-        header("Location: menu.html");
+        header("Location: ../Front-End/menu.html");
         exit();
     }else{
         header("Location: login.html");

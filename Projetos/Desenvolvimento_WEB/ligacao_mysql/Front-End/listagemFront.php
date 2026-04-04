@@ -8,19 +8,34 @@
     <title>Listagem</title>
     <style>
         h1{text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-        table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 10px; text-align: left; }
+        table { width: 100%; border-collapse: collapse;}
+        th, td { padding: 10px; text-align: left;}
 
         .btn-deletar{
             background-color: red;
             color: white;
-            border: 1px solid black;
             border-radius: 5px;
+            display: block;
+            margin: 0 auto;
         }
 
         .btn-deletar:hover{
             transition-duration: .5s;
             background-color: lightcoral;
+            cursor: pointer;
+        }
+
+        .btn-atualizar{
+            background-color: lightblue;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn-atualizar:hover{
+            transition-duration: .5s;
+            background-color: lightcyan;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -36,6 +51,7 @@
                 <th>Nome do tutor</th>
                 <th>Email tutor</th>
                 <th>Deletar</th>
+                <th>Atualizar</th>
             </tr>
         </thead>
         <tbody>
@@ -49,6 +65,7 @@
                             echo "<td>" . $row["nomeTutor"] . "</td>";
                             echo "<td>" . $row["email"] . "</td>";
                             echo "<td><a href = '../Back-end/deletar.php?id=" . $row["id"] ."'> <button class='btn-deletar'> 🗑️ </button></a></td>";
+                            echo "<td><a href = 'atualizarFront.php?id=" . $row["id"] ."'> <button class='btn-atualizar'> 🔄 </button></a></td>";
                         echo '</tr>';
                     }
                 ?>
