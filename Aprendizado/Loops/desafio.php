@@ -1,13 +1,11 @@
 <?php
-    $lista_aleatorios =[];
-
-    for($i = 0; $i < 6; $i++){
-        $lista_aleatorios[] = rand(0,60);
+    $mega_sena = [];
+    for($i = 0; $i < 5; $i++){
+        $mega_sena[] = rand(1,60);
     }
 
-    for($i = 0; $i < 6; $i++){
-        echo $lista_aleatorios[$i];
+    foreach($mega_sena as $numeros){
+        echo $numeros;
         echo '<br/>';
     }
-
 ?>
